@@ -170,9 +170,9 @@ export async function fetchInvoiceById(id: string) {
     }));
 
     return invoice[0];
-  } catch (error) {
-    console.error('Database Error:', error);
-    throw new Error('Failed to fetch invoice.');
+  } catch (error: any) {
+    console.error({'Database Error:': error.message, message: 'Failed to fetch invoice. Id malformed'});
+    //throw new Error('Failed to fetch invoice.');
   }
 }
 
