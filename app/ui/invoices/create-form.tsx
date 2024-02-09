@@ -132,7 +132,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
           </div>
         </fieldset>
         <div id="form-error" aria-live="polite" aria-atomic="true">
-          {state.errors && (
+          {state.errors && Object.keys(state.errors).length > 0 && (
             <p className="mt-2 text-sm text-red-500">
               Missing fields. Failed to create invoice.
             </p>
