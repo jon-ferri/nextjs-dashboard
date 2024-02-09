@@ -3,7 +3,7 @@ const nextConfig = {
   experimental: {
     serverActions: {
       // edit: updated to new key. Was previously `allowedForwardedHosts`
-      allowedOrigins: ['127.0.0.1:3000','turbo-space-doodle-wwwxvg57wv42gp4r-3000.app.github.dev'],
+      allowedOrigins: ['localhost:3000','turbo-space-doodle-wwwxvg57wv42gp4r-3000.app.github.dev:3000'],
     },
   },  
 };
